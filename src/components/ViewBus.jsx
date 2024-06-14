@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import Navbar from './Navbar'
 
 const ViewBus = () =>
     {
@@ -15,6 +16,7 @@ const ViewBus = () =>
         useEffect(()=>{fetchData()},[])
         return (
             <div>
+                <Navbar/><br></br>
                 <br></br><h3><u><center>ViewAll Bus</center></u></h3><br></br>
                 <div className="conatiner">
                     <div className="row">

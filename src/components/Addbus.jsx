@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Addbus = () => {
   {
@@ -35,6 +36,7 @@ const Addbus = () => {
 
 return (
     <div>
+      <Navbar/><br></br>
 
         <div className="container">
             <h2 align="center">ADD BUS</h2>

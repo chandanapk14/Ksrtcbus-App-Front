@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Registeruser = () => {
     const [data, changeData] = useState(
@@ -35,6 +36,7 @@ const Registeruser = () => {
     }}
   return (
     <div>
+        <Navbar/><br></br>
         <h1 align="center"><u>SIGN UP</u></h1><br></br><br></br>
         <div className="container">
                 <div className="row">
@@ -77,7 +79,7 @@ const Registeruser = () => {
                             <center><button className="btn btn-primary" onClick={readValue}>Register</button></center>
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                <center><Link to='/'>Sign In</Link></center>
+                                <center><Link to='/'>Already have an account?</Link></center>
                             </div>
                         </div>
                     </div>
