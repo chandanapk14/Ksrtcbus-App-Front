@@ -19,6 +19,7 @@ const Login = () => {
                 console.log(response.data)     
                 if (response.data.status == "success") {
                     alert("Successfully added")
+                    
                 } else {
                     alert("Error")
                 }
