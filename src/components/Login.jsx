@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Login = () => {
     const [data, changeData] = useState(
@@ -27,6 +28,7 @@ const Login = () => {
     }
   return (
     <div>
+        <Navbar/><br></br>
         <h1 align="center">Welcome to KSRTC Website</h1><br></br><br></br>
         <h5 align="center">SignIn</h5><br></br>
         <div className="container">

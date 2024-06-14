@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Navbar from './Navbar'
 
 const Search = () =>{
     const [data, setData] = useState(
@@ -43,6 +44,7 @@ const Search = () =>{
     }
     return (
         <div>
+            <Navbar/><br></br>
             <br></br><h3><u><center>Search Bus</center></u></h3><br></br>
             <div className="container">
                 <div className="row">
@@ -61,7 +63,7 @@ const Search = () =>{
             </div><br></br>
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                <table class="table table-bordered border-primary">
+                <table class="table table-dark table-striped-columns">
                         
                             <thead>
                                 <tr>
@@ -69,6 +71,7 @@ const Search = () =>{
                                     <th scope="col">Route</th>
                                     <th scope="col">Bus No</th>
                                     <th scope="col">Driver Name</th>
+                                    <th></th>
                                     
                                     
                                 </tr>
